@@ -1,0 +1,1490 @@
+<?xml version="1.0" encoding="GB2312"?>
+<configure>
+	<system>
+		<!--IP地址-->
+		<IP>10.0.18.67</IP>
+
+		<!--端口号-->
+		<Port>7778</Port>
+
+		<!--连监超时时间，单位秒-->
+ 		<LinkOut>200</LinkOut>
+		
+		<!--状态上报时间间隔-->
+		<StateReportInterval>2</StateReportInterval>
+	
+		<!--是否写日志文件-->
+		<IsWriteLog>1</IsWriteLog>
+
+   		<!--是否控制台输出-->
+		<IsPrint>1</IsPrint>
+	</system>
+	
+	
+	<NetConnCfg>
+		<Name>成都四威公司</Name>
+
+		<!--用户ID-->
+		<UserID>2001</UserID>
+
+		<!--登录用户名-->
+		<UserName>siwei</UserName>
+
+		<!--登录密码-->
+		<Password>siwei123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_SiWei.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>2415919104</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>1</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>6</Right>
+			<!--请求发送单条短信-->
+			<Right>9</Right>
+			<!--确认报警-->
+			<Right>21</Right>
+		</CmdType>
+	</NetConnCfg>
+
+	<NetConnCfg>
+		<Name>山东天地通</Name>
+
+		<!--用户ID-->
+		<UserID>2005</UserID>
+
+		<!--登录用户名-->
+		<UserName>sdtdt</UserName>
+
+		<!--登录密码-->
+		<Password>sdtdt123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc></WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443200</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<!--山东-->
+			<OrgNum>3355443200</OrgNum>
+			<!--青岛-->
+			<OrgNum>4026531840</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+			<!--北斗示位标-->
+			<Right>10</Right>
+		</TermType>
+
+		<DataType>
+			<!--船载终端发往指定台站的短信-->
+			<Right>0E050101</Right>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求发送单条短信-->
+			<Right>9</Right>
+
+		</CmdType>
+	</NetConnCfg>
+
+	<NetConnCfg>
+		<Name>广西港海科技</Name>
+
+		<!--用户ID-->
+		<UserID>2006</UserID>
+
+		<!--登录用户名-->
+		<UserName>gxgh</UserName>
+
+		<!--登录密码-->
+		<Password>123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc></WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1358954496</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>1358954496</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求发送单条短信-->
+			<Right>9</Right>
+		</CmdType>
+	</NetConnCfg>
+
+	<NetConnCfg>
+		<Name>武汉大学</Name>
+
+		<!--用户ID-->
+		<UserID>2007</UserID>
+
+		<!--登录用户名-->
+		<UserName>whdx</UserName>
+
+		<!--登录密码-->
+		<Password>whdx123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_WuHanDaXue.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum></OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求发送单条短信-->
+			<Right>9</Right>
+		</CmdType>
+	</NetConnCfg>
+
+	<NetConnCfg>
+		<Name>中国二炮</Name>
+
+		<!--用户ID-->
+		<UserID>2008</UserID>
+
+		<!--登录用户名-->
+		<UserName>zgep</UserName>
+
+		<!--登录密码-->
+		<Password>zgep</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_ZhongGuoErPao.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum></OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>江苏海事局</Name>
+
+		<!--用户ID-->
+		<UserID>2009</UserID>
+
+		<!--登录用户名-->
+		<UserName>jshsj</UserName>
+
+		<!--登录密码-->
+		<Password>jshsj</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc></WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>2415919104</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>南京含悦公司</Name>
+
+		<!--用户ID-->
+		<UserID>2010</UserID>
+
+		<!--登录用户名-->
+		<UserName>hygs</UserName>
+
+		<!--登录密码-->
+		<Password>hygs123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_HanYue.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum></OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+			/** 终端发往终端短信 */
+			<Right>0E000001</Right>
+			/** 终端短信 */
+			<Right>0E03C201</Right>
+			/** 手机发往终端短信 */
+			<Right>0E003101</Right>
+			/** 终端发往手机短信 */
+			<Right>0E080101</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>1</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>9</Right>
+			<!--确认报警-->
+			<Right>21</Right>
+		</CmdType>
+	</NetConnCfg>
+
+	<NetConnCfg>
+		<Name>南京含悦公司客户</Name>
+
+		<!--用户ID-->
+		<UserID>2011</UserID>
+
+		<!--登录用户名-->
+		<UserName>hygstg</UserName>
+
+		<!--登录密码-->
+		<Password>hygstg123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_HanYueTaiGuo.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum></OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+			/** 终端发往终端短信 */
+			<Right>0E000001</Right>
+			/** 终端短信 */
+			<Right>0E03C201</Right>
+			/** 手机发往终端短信 */
+			<Right>0E003101</Right>
+			/** 终端发往手机短信 */
+			<Right>0E080101</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>1</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>9</Right>
+			<!--确认报警-->
+			<Right>21</Right>
+		</CmdType>
+	</NetConnCfg>
+
+	<NetConnCfg>
+		<Name>南京含悦公司测试</Name>
+
+		<!--用户ID-->
+		<UserID>2012</UserID>
+
+		<!--登录用户名-->
+		<UserName>ceshi</UserName>
+
+		<!--登录密码-->
+		<Password>ceshi123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_HanYue.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum></OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+			/** 终端发往终端短信 */
+			<Right>0E000001</Right>
+			/** 终端短信 */
+			<Right>0E03C201</Right>
+			/** 手机发往终端短信 */
+			<Right>0E003101</Right>
+			/** 终端发往手机短信 */
+			<Right>0E080101</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>1</Right>
+			<!--请求设置打开周期位置报告-->
+			<Right>9</Right>
+			<!--确认报警-->
+			<Right>21</Right>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>南海海警船数据推送</Name>
+
+		<!--用户ID-->
+		<UserID>2013</UserID>
+
+		<!--登录用户名-->
+		<UserName>nanhaihaijing</UserName>
+
+		<!--登录密码-->
+		<Password>haijing123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_NHHaiJing.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1207959554</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum></OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>浙江数据测试</Name>
+
+		<!--用户ID-->
+		<UserID>2014</UserID>
+
+		<!--登录用户名-->
+		<UserName>zjsjcs</UserName>
+
+		<!--登录密码-->
+		<Password>zjsjcs</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc></WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>2281701376</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>航天恒星数据测试</Name>
+
+		<!--用户ID-->
+		<UserID>2015</UserID>
+
+		<!--登录用户名-->
+		<UserName>hthx</UserName>
+
+		<!--登录密码-->
+		<Password>hthx123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_HangTianHengXing.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1207959554</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>1207959552</OrgNum>
+			<OrgNum>1610612736</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+			<!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+			/** 终端发往终端短信 */
+			<Right>0E000001</Right>
+			/** 终端短信 */
+			<Right>0E03C201</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求发送单条短信-->
+			<Right>9</Right>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>身份证信息测试</Name>
+
+		<!--用户ID-->
+		<UserID>2016</UserID>
+
+		<!--登录用户名-->
+		<UserName>shenfenzheng</UserName>
+
+		<!--登录密码-->
+		<Password>shenfenzheng</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_shenfenzheng.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1207959554</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+			<!--身份证报告-->
+			<Right>0EB02001</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>日照身份证信息推送</Name>
+
+		<!--用户ID-->
+		<UserID>2017</UserID>
+
+		<!--登录用户名-->
+		<UserName>shenfenzheng_shandong</UserName>
+
+		<!--登录密码-->
+		<Password>shenfenzheng</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_shenfenzheng.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1207959554</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>256</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--身份证报告-->
+			<Right>0EB02001</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>浙江身份证信息推送</Name>
+
+		<!--用户ID-->
+		<UserID>2018</UserID>
+
+		<!--登录用户名-->
+		<UserName>shenfenzheng_zhejiang1</UserName>
+
+		<!--登录密码-->
+		<Password>shenfenzheng1</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_shenfenzheng.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1207959554</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>256</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--身份证报告-->
+			<Right>0EB02001</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>温州身份证信息推送</Name>
+
+		<!--用户ID-->
+		<UserID>2019</UserID>
+
+		<!--登录用户名-->
+		<UserName>shenfenzheng_wenzhou</UserName>
+
+		<!--登录密码-->
+		<Password>shenfenzheng</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_shenfenzheng.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1207959554</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>256</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--身份证报告-->
+			<Right>0EB02001</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>广西水利局数据推送</Name>
+
+		<!--用户ID-->
+		<UserID>2020</UserID>
+
+		<!--登录用户名-->
+		<UserName>gxshl</UserName>
+
+		<!--登录密码-->
+		<Password>gxshl123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_HangTianHengXing.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>1207959554</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>1342177280</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>山东天地通2</Name>
+
+		<!--用户ID-->
+		<UserID>2021</UserID>
+
+		<!--登录用户名-->
+		<UserName>sdtdt2</UserName>
+
+		<!--登录密码-->
+		<Password>sdtdt123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc></WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443200</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<!--山东-->
+			<OrgNum>3355443200</OrgNum>
+			<!--青岛-->
+			<OrgNum>4026531840</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+			<!--北斗示位标-->
+			<Right>10</Right>
+		</TermType>
+
+		<DataType>
+			<!--船载终端发往指定台站的短信-->
+			<Right>0E050101</Right>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求发送单条短信-->
+			<Right>9</Right>
+
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>上海埃威数据推送</Name>
+
+		<!--用户ID-->
+		<UserID>2022</UserID>
+
+		<!--登录用户名-->
+		<UserName>aiwei</UserName>
+
+		<!--登录密码-->
+		<Password>aiwei123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_SiWei.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>2550136832</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>中国海军数据推送</Name>
+
+		<!--用户ID-->
+		<UserID>2023</UserID>
+
+		<!--登录用户名-->
+		<UserName>HJDataPush</UserName>
+
+		<!--登录密码-->
+		<Password>HJ123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_SiWei.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>0000000264</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>256</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>海军数据推送</Name>
+
+		<!--用户ID-->
+		<UserID>2025</UserID>
+
+		<!--登录用户名-->
+		<UserName>HJDataPush</UserName>
+
+		<!--登录密码-->
+		<Password>HJ123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_SiWei.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>2415919104</OrgNum>
+			<OrgNum>2550136832</OrgNum>
+			<OrgNum>2684354560</OrgNum>
+			<OrgNum>1207959552</OrgNum>
+			<OrgNum>1476395008</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+			<!--解除报警-->
+			<Right>0E005303</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>大连铭洋推送</Name>
+
+		<!--用户ID-->
+		<UserID>2026</UserID>
+
+		<!--登录用户名-->
+		<UserName>mingyang1</UserName>
+
+		<!--登录密码-->
+		<Password>mingyang123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_SiWei.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>3506438144</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+			<!--解除报警-->
+			<Right>0E005303</Right>
+			/** 终端发往终端短信 */
+			<Right>0E000001</Right>
+			/** 终端短信 */
+			<Right>0E03C201</Right>
+		</DataType>
+
+		<CmdType>
+			<!--请求单个位置-->
+			<Right>0</Right>
+			<!--请求发送单条短信-->
+			<Right>9</Right>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>江苏项目埃威推送</Name>
+
+		<!--用户ID-->
+		<UserID>2027</UserID>
+
+		<!--登录用户名-->
+		<UserName>aiwei111</UserName>
+
+		<!--登录密码-->
+		<Password>123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_aiwei111.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>3506438144</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+			<!--身份证报告-->
+			<Right>0EB02001</Right>
+			<!--拆卸报警-->
+			<Right>0E00C503</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>江苏项目中交推送</Name>
+
+		<!--用户ID-->
+		<UserID>2028</UserID>
+
+		<!--登录用户名-->
+		<UserName>zhongjiao</UserName>
+
+		<!--登录密码-->
+		<Password>123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>2</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc>WhiteList_zhongjiao.txt</WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>3506438144</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+			<!--身份证报告-->
+			<Right>0EB02001</Right>
+			<!--拆卸报警-->
+			<Right>0E00C503</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>农业部灾备中心数据推送</Name>
+
+		<!--用户ID-->
+		<UserID>2029</UserID>
+
+		<!--登录用户名-->
+		<UserName>zaibeizhongxin</UserName>
+
+		<!--登录密码-->
+		<Password>123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc></WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>3407347712</OrgNum>
+			<OrgNum>3514826752</OrgNum>
+			<OrgNum>2466250752</OrgNum>
+			<OrgNum>2306867200</OrgNum>
+			<OrgNum>1275068416</OrgNum>
+			<OrgNum>1342177280</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+	<NetConnCfg>
+		<Name>农业部船检局数据推送</Name>
+
+		<!--用户ID-->
+		<UserID>2030</UserID>
+
+		<!--登录用户名-->
+		<UserName>chuanjianzhongruan</UserName>
+
+		<!--登录密码-->
+		<Password>123456</Password>
+
+		<!--过滤方式 1：按组织机构过滤 2：按终端白名单过滤-->
+		<FilterType>1</FilterType>
+
+		<!--白名单过滤文件名-->
+		<WhiteListDoc></WhiteListDoc>
+
+		<!--台站编号-->
+		<StatNo>3355443205</StatNo>
+
+		<!--组织机构号列表-->
+		<Org>
+			<OrgNum>3489660928</OrgNum>
+			<OrgNum>2550136832</OrgNum>
+		</Org>
+
+		<TermType>
+			<!--北斗终端-->
+			<Right>1</Right>
+		</TermType>
+
+		<DataType>
+			<!--单位置数据包-->
+			<Right>0EE00001</Right>
+			<!--多位置数据包-->
+			<Right>0EE50001</Right>
+			<!--紧急报警信息-->
+			<Right>0E00C303</Right>
+			<!--紧急报警附加信息-->
+			<Right>0E00C403</Right>
+                        <!--解除报警-->
+			<Right>0E005303</Right>
+			<!--出港报告-->
+			<Right>0E03D201</Right>
+			<!--入港报告-->
+			<Right>0E03D301</Right>
+                        <!--通断电报警-->
+			<Right>0EE80001</Right>
+                        <!--显控开机报告-->
+			<Right>0E00C501</Right>
+                        <!--显控关机报告-->
+			<Right>0E00C601</Right>
+		</DataType>
+
+		<CmdType>
+		</CmdType>
+	</NetConnCfg>
+</configure>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/classes12.jar"/>
+	<classpathentry kind="lib" path="lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-digester.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/jta.jar"/>
+	<classpathentry kind="lib" path="lib/jxl.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.0.4-bin.jar"/>
+	<classpathentry kind="lib" path="lib/nls_charset12.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.7-20101029.jar"/>
+	<classpathentry kind="lib" path="lib/quartz-1.6.5.jar"/>
+	<classpathentry kind="lib" path="lib/json-lib-2.1.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang.jar"/>
+	<classpathentry kind="lib" path="lib/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/druid-1.0.15.jar"/>
+	<classpathentry kind="lib" path="D:/app/Tomcat7.0.70_8080/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="lib/pinyin4j-2.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/hcsmgp.jar" sourcepath="lib/hcsmgp.jar"/>
+	<classpathentry kind="lib" path="lib/dom4j-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/jacob.jar"/>
+	<classpathentry kind="lib" path="lib/iTextAsian.jar"/>
+	<classpathentry kind="lib" path="lib/itextpdf-5.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
